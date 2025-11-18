@@ -57,7 +57,7 @@ let model: THREE.Object3D | null = null;
 // Load 3D model
 const loader = new GLTFLoader();
 loader.load(
-    './src/assets/clothes.glb', 
+    './public/assets/clothes.glb', 
     (gltf) => {
         model = gltf.scene;
 
