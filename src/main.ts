@@ -52,7 +52,7 @@ controls.autoRotate = false;
 controls.autoRotateSpeed = 1;
 
 let model: THREE.Object3D | null = null;
-let modelLoaded: boolean = false;
+
 
 // Load 3D model
 const loader = new GLTFLoader();
@@ -72,7 +72,7 @@ loader.load(
         });
         
         scene.add(model);
-        modelLoaded = true;
+
 
         const box = new THREE.Box3().setFromObject(model);
         const center = box.getCenter(new THREE.Vector3());
